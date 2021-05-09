@@ -1,18 +1,20 @@
 #!/bin/bash
 #set -e
-# change a commit comment
-# git commit --amend -m "more info"
-# git push --force origin
+#=================================================================================
+#Author: DemonKiller
+#SPDX-License-Identifier: GPL-3.0
+#Warning! DO NOT RUN THIS SCRIPT BLINDLY. MAKE CHANGES ACCORDING TO YOUR WORKFLOW.
+#RUN AT YOUR OWN RISK.
+#=================================================================================
 
-
-# checking if I have the latest files from github
+#Pull all files from online git repo
 echo "Checking for newer files online first"
 git pull
 
-# Below command will backup everything inside the project folder
+#Backup to local project directry
 git add --all .
 
-# Give a comment to the commit if you want
+# Commit Comment
 echo "####################################"
 echo "Write your commit comment!"
 echo "####################################"
@@ -20,14 +22,11 @@ echo "####################################"
 read input
 
 # Committing to the local repository with a message containing the time details and commit text
-
 git commit -m "$input"
 
 # Push the local files to github
-
 git push
-
 
 echo "################################################################"
 echo "###################    Git Push Done      ######################"
-echo "################################################################" 
+echo "################################################################"
