@@ -160,7 +160,7 @@ images:
     # productBanner:       "banner.png"
     productIcon:         "install.png"
     productLogo:         "elex.png"
-    productWallpaper:    "back.jpg"
+    #productWallpaper:    "back.jpg"
     productWelcome:      "logo.png"
 
 # Colors for text and background components.
