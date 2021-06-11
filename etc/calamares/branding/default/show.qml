@@ -29,53 +29,66 @@ Presentation
     }
 
 
-  Slide {
+     Slide {
         anchors.fill: parent
+        anchors.verticalCenterOffset: 0
 
         Image {
             id: background
             source: "slide1.png"
-            width: 850; height: 550
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+            width: parent.width; height: parent.height
+            horizontalAlignement: Image.AlignCenter
+            verticalAlignement: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
         }
     }
-    
+
     Slide {
         anchors.fill: parent
+        anchors.verticalCenterOffset: 0
 
         Image {
-            id: background1
+            id: background
             source: "slide2.png"
-            width: 850; height: 550
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+            width: parent.width; height: parent.height
+            horizontalAlignement: Image.AlignCenter
+            verticalAlignement: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
         }
     }
-    
+
     Slide {
         anchors.fill: parent
+        anchors.verticalCenterOffset: 0
 
         Image {
-            id: background2
+            id: background
             source: "slide3.png"
-            width: 850; height: 550
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
+            width: parent.width; height: parent.height
+            horizontalAlignement: Image.AlignCenter
+            verticalAlignement: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
+        }
+    }
+
+    Slide {
+        anchors.fill: parent
+        anchors.verticalCenterOffset: 0
+
+        Image {
+            id: background
+            source: "slide4.png"
+            width: parent.width; height: parent.height
+            horizontalAlignement: Image.AlignCenter
+            verticalAlignement: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
         }
     }
     
-        Slide {
-        anchors.fill: parent
-
-        Image {
-            id: background3
-            source: "slide4.png"
-            width: 850; height: 550
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-    }
 
 
     // When this slideshow is loaded as a V1 slideshow, only
