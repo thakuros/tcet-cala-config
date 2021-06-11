@@ -29,12 +29,14 @@ Presentation
     }
 
 
-     Slide {
+     Slide
+     {
         anchors.fill: parent
         anchors.verticalCenterOffset: 0
 
-        Image {
-            id: background
+        Image
+        {
+            id: background1
             source: "slide1.png"
             width: parent.width; height: parent.height
             horizontalAlignement: Image.AlignCenter
@@ -44,12 +46,14 @@ Presentation
         }
     }
 
-    Slide {
+    Slide
+    {
         anchors.fill: parent
         anchors.verticalCenterOffset: 0
 
-        Image {
-            id: background
+        Image
+        {
+            id: background2
             source: "slide2.png"
             width: parent.width; height: parent.height
             horizontalAlignement: Image.AlignCenter
@@ -59,12 +63,14 @@ Presentation
         }
     }
 
-    Slide {
+    Slide
+    {
         anchors.fill: parent
         anchors.verticalCenterOffset: 0
 
-        Image {
-            id: background
+        Image
+        {
+            id: background3
             source: "slide3.png"
             width: parent.width; height: parent.height
             horizontalAlignement: Image.AlignCenter
@@ -74,12 +80,14 @@ Presentation
         }
     }
 
-    Slide {
+    Slide
+    {
         anchors.fill: parent
         anchors.verticalCenterOffset: 0
 
-        Image {
-            id: background
+        Image
+        {
+            id: background4
             source: "slide4.png"
             width: parent.width; height: parent.height
             horizontalAlignement: Image.AlignCenter

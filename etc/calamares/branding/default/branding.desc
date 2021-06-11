@@ -127,7 +127,7 @@ strings:
     shortVersion:        ELEX
     versionedName:       TCET Linux
     shortVersionedName:  TCET Linux ELEX
-    bootloaderEntryName: TCET
+    bootloaderEntryName: TCET Linux
 
 # These images are loaded from the branding module directory.
 #
