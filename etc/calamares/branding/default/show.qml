@@ -15,12 +15,14 @@ Presentation
 {
     id: presentation
 
-    function nextSlide() {
+    function nextSlide()
+    {
         console.log("QML Component (default slideshow) Next slide");
         presentation.goToNextSlide();
     }
 
-    Timer {
+    Timer
+    {
         id: advanceTimer
         interval: 10000
         running: presentation.activatedInCalamares
@@ -29,8 +31,8 @@ Presentation
     }
 
 
-     Slide
-     {
+    Slide
+    {
         anchors.fill: parent
         anchors.verticalCenterOffset: 0
 
@@ -39,8 +41,8 @@ Presentation
             id: background1
             source: "slide1.png"
             width: parent.width; height: parent.height
-            horizontalAlignement: Image.AlignCenter
-            verticalAlignement: Image.AlignTop
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
             fillMode: Image.Stretch
             anchors.fill: parent
         }
@@ -56,12 +58,13 @@ Presentation
             id: background2
             source: "slide2.png"
             width: parent.width; height: parent.height
-            horizontalAlignement: Image.AlignCenter
-            verticalAlignement: Image.AlignTop
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
             fillMode: Image.Stretch
             anchors.fill: parent
         }
     }
+
 
     Slide
     {
@@ -73,8 +76,8 @@ Presentation
             id: background3
             source: "slide3.png"
             width: parent.width; height: parent.height
-            horizontalAlignement: Image.AlignCenter
-            verticalAlignement: Image.AlignTop
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
             fillMode: Image.Stretch
             anchors.fill: parent
         }
@@ -90,27 +93,28 @@ Presentation
             id: background4
             source: "slide4.png"
             width: parent.width; height: parent.height
-            horizontalAlignement: Image.AlignCenter
-            verticalAlignement: Image.AlignTop
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
             fillMode: Image.Stretch
             anchors.fill: parent
         }
     }
     
 
-
-    // When this slideshow is loaded as a V1 slideshow, only
+// When this slideshow is loaded as a V1 slideshow, only
     // activatedInCalamares is set, which starts the timer (see above).
     //
     // In V2, also the onActivate() and onLeave() methods are called.
     // These example functions log a message (and re-start the slides
     // from the first).
-    function onActivate() {
+    function onActivate()
+    {
         console.log("QML Component (default slideshow) activated");
         presentation.currentSlide = 0;
     }
 
-    function onLeave() {
+    function onLeave()
+    {
         console.log("QML Component (default slideshow) deactivated");
     }
 
